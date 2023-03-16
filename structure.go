@@ -9,7 +9,7 @@ type new struct {
 	city string
 }
 
-//function which accepts variable of "new" type and prints name property
+//function which accepts variable of "new" type and prints new properties
 func display(a new) {
 	fmt.Println("name: ", a.name)
 	fmt.Println("age: ", a.age)
