@@ -10,6 +10,11 @@ func main() {
 	}
 	fmt.Println(firstArray)
 
+	var firstSlice [] int = firstArray[3:10] // create a slice of firstArray
+	fmt.Println(firstSlice)
+	firstSliceAppend := append(firstSlice, 55)
+	fmt.Println(firstSliceAppend)
+
 	// create an empty array with a length of 52
 	secondArray := make([]string, 52)
 
@@ -25,4 +30,9 @@ func main() {
 		}
 	}
 	fmt.Println(secondArray)
+
+	secondSlice := secondArray[4:15]
+	fmt.Println(secondSlice)
+	secondSliceAppend := append(secondSlice, "appended")
+	fmt.Println(secondSliceAppend)
 }
